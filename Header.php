@@ -44,15 +44,21 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gedion' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+		<nav id="site-navigation"  class="navbar navbar-expand-md navbar-light top bg-light">
+    <a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'leulstheme' ); ?></button>
+    <?php
+    wp_nav_menu( array(
+      'theme_location'  => 'menu-1',
+      'menu_id'         => 'primary-menu',
+      'container'       => 'div',
+            'container_id'    => 'navbarCollapse',
+      'container_class' => 'collapse navbar-collapse',
+      'menu_class'      => 'navbar-nav mr-auto',
+            'walker'          => new leulstheme_navbar()
+    ) );
+    ?>
+  </nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
