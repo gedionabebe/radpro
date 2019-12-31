@@ -150,7 +150,7 @@ function gedion_widgets_init() {
 		'after_title' => '</h3>',
 		) );
 
-		
+
 }
 add_action( 'widgets_init', 'gedion_widgets_init' );
 
@@ -234,9 +234,9 @@ class gedionstheme_navbar extends Walker_Nav_Menu
             $atts ['class']= $manual_class;
         }
 
-        if (in_array('current-menu-item', $item->classes)) {
+        /*if (in_array('current-menu-item', $item->classes)) {
             $atts['class'] .= ' active';
-        }
+        }*/
 
         $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
 
