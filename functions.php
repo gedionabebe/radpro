@@ -158,8 +158,11 @@ add_action( 'widgets_init', 'gedion_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gedion_scripts() {
+	wp_enqueue_style( 'gedion_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'gedion-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'gedion_bootstrap_js', get_template_dirctory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20191128', true);
+	
 	wp_enqueue_script( 'gedion-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'gedion-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
