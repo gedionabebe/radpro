@@ -24,21 +24,27 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gedion' ); ?></a>
 
-	<nav id="site-navigation"  class="navbar navbar-expand-md navbar-light top bg-light">
-    <a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'leulstheme' ); ?></button>
-    <?php
-    wp_nav_menu( array(
-      'theme_location'  => 'menu-1',
-      'menu_id'         => 'primary-menu',
-      'container'       => 'div',
+
+<nav id="site-navigation"  class="navbar navbar-expand-md ">
+    <a class="navbar-brand" href="#">
+        <?php bloginfo('name'); ?>
+    </a>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gedion' ); ?></button>
+<?php
+            wp_nav_menu([
+            'menu'            => 'primary-menu',
+            'theme_location'  => 'menu-1',
+            'container'       => 'div',
             'container_id'    => 'navbarCollapse',
-      'container_class' => 'collapse navbar-collapse',
-      'menu_class'      => 'navbar-nav mr-auto',
-            'walker'          => new gedionstheme_navbar()
-    ) );
-    ?>
-  </nav><!-- #site-navigation -->
+            'container_class' => 'collapse navbar-collapse',
+            'menu_id'         => false,
+            'menu_class'      => 'navbar-nav mr-auto',
+            'depth'           => 0,
+            'fallback_cb'     => 'functions::fallback',
+            'walker'          => new ged()
+            ]);
+        ?>
+		</nav>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
