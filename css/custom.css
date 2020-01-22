@@ -24,7 +24,7 @@ color: black;
 border-style: solid;
 border-radius: 4px;
 border-width: 1.5px;
-border-color: darkblue;
+border-color: whitesmoke;
 }
 .widget ul li{
     list-style-type: none;
@@ -36,7 +36,6 @@ border-color: darkblue;
     border-radius: 6px;
     border-width: 2px;
     box-shadow: gray 2px 1px;
-    border-shad
 
 }
 .widget ul li a:link,
