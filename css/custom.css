@@ -19,6 +19,12 @@ color: blanchedalmond;
 #navbarCollapse{
 padding: 0%;
 left: 50%;
+margin-left: 40%;
+color: black;
+border-style: solid;
+border-radius: 4px;
+border-width: 1.5px;
+border-color: darkblue;
 }
 .widget ul li{
     list-style-type: none;
@@ -28,7 +34,9 @@ left: 50%;
     border-style: solid;
     box-sizing: border-box;
     border-radius: 6px;
-    border-width: medium;
+    border-width: 2px;
+    box-shadow: gray 2px 1px;
+    border-shad
 
 }
 .widget ul li a:link,
@@ -36,4 +44,10 @@ left: 50%;
 .widget ul li a:active{
     text-decoration: none;
     color: gray;    
+}
+.search-submit{
+    background-color: cornflowerblue;
+}
+.site-branding .site-title h1{
+ color: black;   
 }
