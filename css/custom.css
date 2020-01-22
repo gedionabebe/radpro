@@ -20,3 +20,20 @@ color: blanchedalmond;
 padding: 0%;
 left: 50%;
 }
+.widget ul li{
+    list-style-type: none;
+}
+.widget{
+    border: rgb(48, 45, 45);
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border-width: medium;
+
+}
+.widget ul li a:link,
+.widget ul li a:visited,
+.widget ul li a:active{
+    text-decoration: none;
+    color: gray;    
+}
