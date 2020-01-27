@@ -38,7 +38,8 @@ text-underline-position: below;
     border-radius: 6px;
     border-width: 2px;
     box-shadow: gray 2px 1px;
-
+    margin-left: 10%;
+    margin-top: 10%;
 }
 .widget ul li a:link,
 .widget ul li a:visited,
@@ -64,6 +65,9 @@ text-underline-position: below;
     color:rgb(52, 52, 153);
 }
 .entry-title{
-    margin: 10%;
     font-size: xx-large;
+}
+.entry-content{
+font-size: medium;
+
 }
