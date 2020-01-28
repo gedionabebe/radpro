@@ -3,7 +3,7 @@
     background-color: whitesmoke;
 }
 #site-navigation{
-background-color: rgb(48, 45, 45);
+background-color: rgb(112, 111, 107);
 font-style: normal;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: blanchedalmond;
@@ -75,6 +75,8 @@ text-underline-position: below;
     border-bottom-width: 1px;
     border-bottom-color:rgb(194, 188, 188);
     border-bottom-style: solid; 
+    font-size: 110%;
+    font-weight: bold;
 }
 #site-navigation a:link,
 #site-navigation a:active,
@@ -91,7 +93,7 @@ border-left: black;
 }
 
 .site-content{
-    background-color: rgb(21, 29, 43);
+    background-color: rgb(238, 238, 238);
 }
 .col-sm-8{
     border-left-width: 1px;
@@ -102,4 +104,34 @@ border-left: black;
     border-right-style: solid;
     background-color:white;
     box-shadow: gray 2px 2px;
+}
+.widget-title{
+color: black;
+}
+#footer-sidebar{
+
+    background-color:rgb(48, 45, 45);
+}
+#footer-sidebar ul li a:visited{
+    color:rgb(52, 52, 153);
+}
+#footer-sidebar ul li a:link,
+#footer-sidebar ul li a:active{
+    color: lightskyblue;
+}
+#footer-sidebar ul li a:hover{
+    color: white;
+    border-bottom-width: 1px;
+    border-bottom-color:rgb(194, 188, 188);
+    border-bottom-style: solid; 
+}
+.footer-widget-title{
+    color: black;
+}
+#footer-sidebar1{
+    border-right-width: 1px;
+    border-right-color:white;
+    border-right-style: solid;
+    box-shadow: lightgray;
+    box-shadow: gray 2px 1px;
 }
