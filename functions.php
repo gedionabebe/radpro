@@ -158,15 +158,15 @@ add_action( 'widgets_init', 'gedion_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gedion_scripts() {
-	wp_enqueue_style( "custom", get_template_directory_uri().'/css/custom.css', array(), '1.0', 'all' );
-	wp_enqueue_style( 'gedion_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( "custom", get_template_directory_uri().'/assets/css/custom.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'gedion_bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'gedion-style', get_stylesheet_uri() );
 
 	// wp_enqueue_script( 'gedion_bootstrap_js', get_template_dirctory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20191128', true);
 	
-	wp_enqueue_script( 'gedion-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'gedion-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'gedion-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'gedion-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -358,6 +358,10 @@ class gedionstheme_navbar extends Walker_Nav_Menu
     }
 }
 
+function gedion_add_editor_styles() {
+    add_editor_style( '/assets/css/custom-editor-style.css' );
+}
+add_action( 'admin_init', 'gedion_add_editor_styles' );
 /**
  * Implement the Custom Header feature.
  */
