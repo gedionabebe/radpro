@@ -3,7 +3,7 @@
     background-color: whitesmoke;
 }
 #site-navigation{
-background-color: rgb(112, 111, 107);
+background-color: rgba(30, 30, 53, 0.815);
 font-style: normal;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: blanchedalmond;
@@ -17,11 +17,12 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: blanchedalmond;
 }
 #navbarCollapse{
-padding: 0%;
-left: 50%;
-margin-left: 40%;
+margin-left: 30%;
+margin-right: 25%;
 color: black;
-text-underline-position: below;
+border-bottom-width: 2px;
+border-bottom-color: rgb(192, 32, 32);
+border-bottom-style: solid;
 }
 .widget ul li{
     list-style-type: none;
@@ -54,34 +55,34 @@ text-underline-position: below;
 }
 
 #site-navigation ul li a:visited{
-    color:rgb(52, 52, 153);
+    color: lightgray;
     border-right-width: 1px;
     border-right-color:rgb(194, 188, 188);
     border-right-style: solid;
 }
 #site-navigation ul li a:link,
 #site-navigation ul li a:active{
-    color: lightskyblue;
+    color: white;
    
     border-right-width: 1px;
     border-right-color:rgb(194, 188, 188);
     border-right-style: solid;
 }
 #site-navigation ul li a:hover{
-    color: white;
+    color: rgb(187, 235, 236);
     border-right-width: 1px;
     border-right-color:rgb(194, 188, 188);
     border-right-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color:rgb(194, 188, 188);
-    border-bottom-style: solid; 
+    border-top-width: 1px;
+    border-top-color:rgb(194, 188, 188);
+    border-top-style: solid; 
     font-size: 110%;
     font-weight: bold;
 }
 #site-navigation a:link,
 #site-navigation a:active,
 #site-navigation a:visited{
-    color:rgb(52, 52, 153);
+    color:white;
 }
 .entry-title{
     font-size: xx-large;
@@ -93,7 +94,7 @@ border-left: black;
 }
 
 .site-content{
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(180, 180, 180, 0.719);
 }
 .col-sm-8{
     border-left-width: 1px;
@@ -106,27 +107,29 @@ border-left: black;
     box-shadow: gray 2px 2px;
 }
 .widget-title{
-color: black;
+color: white;
+background-color: rgb(58, 57, 57);
+
 }
 #footer-sidebar{
 
-    background-color:rgb(48, 45, 45);
+    background-color:rgba(30, 30, 53, 0.815);
 }
 #footer-sidebar ul li a:visited{
-    color:rgb(52, 52, 153);
+    color:lightgray;
 }
 #footer-sidebar ul li a:link,
 #footer-sidebar ul li a:active{
-    color: lightskyblue;
+    color: white;
 }
 #footer-sidebar ul li a:hover{
-    color: white;
+    color: rgb(170, 228, 137);
     border-bottom-width: 1px;
     border-bottom-color:rgb(194, 188, 188);
     border-bottom-style: solid; 
 }
 .footer-widget-title{
-    color: black;
+    color: white;
 }
 #footer-sidebar1{
     border-right-width: 1px;
