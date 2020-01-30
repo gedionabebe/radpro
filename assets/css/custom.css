@@ -91,6 +91,12 @@ border-bottom-style: solid;
 }
 .entry-title{
     font-size: xx-large;
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-color:rgb(216, 179, 179);
+    border-bottom-style: solid;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .entry-content{
 font-size: medium;
