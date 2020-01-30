@@ -148,4 +148,64 @@ background-color: rgb(58, 57, 57);
     border-right-style: solid;
     box-shadow: lightgray;
     box-shadow: gray 2px 1px;
+    color: white;
+}
+#footer-sidebar2{
+    border-right-width: 1px;
+    border-right-color:white;
+    border-right-style: solid;
+    box-shadow: lightgray;
+    box-shadow: gray 2px 1px;
+    color: white;
+}
+#footer-sidebar3{
+    border-right-width: 1px;
+    border-right-color:white;
+    border-right-style: solid;
+    box-shadow: lightgray;
+    box-shadow: gray 2px 1px;
+    color: white;
+}
+#footer-sidebar4{
+    border-right-width: 1px;
+    border-right-color:white;
+    border-right-style: solid;
+    box-shadow: lightgray;
+    box-shadow: gray 2px 1px;
+    color: white;
+}
+.col-sm-4 .search-submit{
+    border-style: double;
+    background-color: rgba(65, 65, 226, 0.61);
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: rgb(203, 224, 161);
+    color: white;
+    margin-left: 20%;
+    
+}
+.col-sm-4 .search-field{
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: rgb(167, 197, 118) 2px 1px;
+    width: 130%;
+}
+#footer-sidebar .search-submit{
+    border-style: double;
+    background-color: rgba(65, 65, 226, 0.61);
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: rgb(203, 224, 161);
+    color: white;
+    margin-left: 15%;
+}
+#footer-sidebar .search-field{
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: rgb(167, 197, 118) 2px 1px;
+    width: 120%;
 }
