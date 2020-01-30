@@ -42,10 +42,15 @@ border-bottom-style: solid;
    
 }
 .widget ul li a:link,
-.widget ul li a:visited,
 .widget ul li a:active{
     text-decoration: none;
     color: gray;    
+}
+.widget ul li a:hover{
+    color: rgb(192, 99, 134);
+}
+.widget ul li a:visited{
+    color: rgb(31, 30, 30);
 }
 .col-sm-4 .search-form{
     margin-top: 10%;
