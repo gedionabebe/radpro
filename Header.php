@@ -25,7 +25,19 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gedion' ); ?></a>
 
 
-<nav id="site-navigation"  class="navbar navbar-expand-md ">
+
+
+	<header id="masthead" class="site-header">
+    <div class="site-branding col-md-4">
+<?php
+            the_custom_logo();
+            
+            ?>
+        </div><!-- .site-branding -->		
+
+		
+	</header><!-- #masthead -->
+    <nav id="site-navigation"  class="navbar navbar-expand-md ">
     <a class="navbar-brand" href="#">
         <?php bloginfo('name'); ?>
     </a>
@@ -45,11 +57,4 @@
             ]);
         ?>
 		</nav>
-
-	<header id="masthead" class="site-header">
-		
-
-		
-	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
